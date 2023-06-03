@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr );
+    margin: auto;
+    width: 1440px;
+    height: auto;
+}
+.left-col {
+    padding-left: 250px;
+    color: hsl(235, 18%, 26%);
+}
+.right-col{
+    padding: 20px;
+}
+.header-text{
+    margin: 90px 0px 16px 0px;
+}
+.header{
+    font-size: 3.7rem;
+    color:  hsl(234, 29%, 20%);
+}
+.slogan , .package-info , .package-info p , .email-field{
+    margin-top: 15px;
+}
+.email-title , #invalid-email{
+    margin-top: 25px;
+    font-weight: 500;
+}
+.email-field{
+    margin-top: 50px;
+}
+#email , #btn{
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid hsl(240, 5%, 91%);
+}
+#btn{
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+}
+.pro-disc , .measuring , .much-more{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    align-self: end;
+    margin-right:.4rem ;
+}
+.success-modal{
+    width: 450px;
+    margin: auto;
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+
+}
+#modal-bg{
+    background-color: rgba(0, 0,0, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: 1; 
+    visibility: hidden;
+}
+.appreciation{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 20px;
+    
+}
+.check{
+    margin-bottom: 25px;
+}
+#dismiss-btn{
+    margin: 30px 0 ;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background: hsl(234, 29%, 20%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    /* transition: 10s ease-in-out; */
+
+}
+#dismiss-btn:hover , #btn:hover{
+    background-image: linear-gradient(to right , hsl(4, 79%, 54%) ,hsl(4 , 100% , 67%));
+    box-shadow: 2px 2px 2px 2px hsla(4 , 100% , 67% , 0.8) ;
+    cursor: pointer;
+    
+}
+#invalid-email{
+    color: hsl(3, 100%, 52%);
+    visibility: hidden;
+}
+.email-head{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
