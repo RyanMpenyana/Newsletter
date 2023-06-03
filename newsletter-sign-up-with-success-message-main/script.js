@@ -35,6 +35,7 @@ function grantModal(){
 function hideModal(){
     const hideModal = document.getElementById('modal-bg');
     hideModal.style.visibility = "hidden";
+    emailInput.value = "";
 }
 emailInput.addEventListener('click' , errorReset);
 emailBtn.addEventListener('click' , execution);
