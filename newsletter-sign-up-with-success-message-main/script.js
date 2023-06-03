@@ -17,15 +17,15 @@ function errorHandle(){
 }
 
 function errorReset(){
-    emailInput.style = 'default'
-    invalidMail.style = 'default'
+    emailInput.style = 'default';
+    invalidMail.style = 'default';
 }
 function execution(){
     if (emailInput.value.includes('com') && emailInput.value.includes('@')  === true) {
         grantModal();
     }
     else{
-        errorHandle()
+        errorHandle();
     }
 }
 function grantModal(){
