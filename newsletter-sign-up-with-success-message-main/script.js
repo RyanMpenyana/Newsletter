@@ -16,7 +16,7 @@ function errorHandle(){
     invalidMail.style.visibility = 'visible';
 }
 
-function ErrorReset(){
+function errorReset(){
     emailInput.style = 'default'
     invalidMail.style = 'default'
 }
@@ -36,6 +36,6 @@ function hideModal(){
     const hideModal = document.getElementById('modal-bg');
     hideModal.style.visibility = "hidden";
 }
-emailInput.addEventListener('click' , ErrorReset);
+emailInput.addEventListener('click' , errorReset);
 emailBtn.addEventListener('click' , execution);
 dismissBtn.addEventListener('click', hideModal);
